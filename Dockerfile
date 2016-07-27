@@ -14,6 +14,9 @@ RUN curl -sSL https://get.docker.com/ | sh
 
 # Install the magic wrapper.
 ADD ./wrapdocker /usr/local/bin/wrapdocker
+ADD ./clean.sh  /clean.sh
+ADD ./iplist.sh /iplist.sh
+ADD ./startfarm.sh /startfarm.sh
 RUN chmod +x /usr/local/bin/wrapdocker
 
 # Define additional metadata for our image.
