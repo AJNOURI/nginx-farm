@@ -1,5 +1,10 @@
 # Nginx server farm using Docker-in-Docker
 
+
+Originally forked from [https://github.com/jpetazzo/dind](https://github.com/jpetazzo/dind) 
+
+#### Instructions
+
 Clone the image
 
 	docker pull ajnouri/dind:1.0  
