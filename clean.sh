@@ -2,12 +2,12 @@
 
 # AJN: ajn.bin@gmail.com
 
-service docker status
-if [ $? -eq 0 ]; then
-    echo "Docker OK" 
-else
-    echo "Restarting Docker daemon"
+daemon=`cat /var/run/docker.pid 2> /dev/null`
+if [ -z "$daemon" ]; then
+    echo "Docker daemon not running" >&2
     service docker start
+else
+    echo "Docker daemon running"
 fi
 
 echo ''
