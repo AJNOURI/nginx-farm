@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Disable Tx TCP offloading
+ethtool -K eth0 tx off
+
 # Ensure that all nodes in /dev/mapper correspond to mapped devices currently loaded by the device-mapper kernel driver
 dmsetup mknodes
 
