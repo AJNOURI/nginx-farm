@@ -7,7 +7,7 @@ Originally forked from [https://github.com/jpetazzo/dind](https://github.com/jpe
 
 Clone the image
 
-	docker pull ajnouri/dind:1.0  
+	docker pull dind
 
 Run a Docker in Docker container:  
 
