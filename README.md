@@ -5,13 +5,9 @@ Originally forked from [https://github.com/jpetazzo/dind](https://github.com/jpe
 
 #### Instructions
 
-Clone the image
-
-	docker pull dind
-
 Run a Docker in Docker container:  
 
-	docker run --privileged -t -i --hostname dind ajnouri/dind   
+	docker run --privileged -t -i --hostname dind ajnouri/nginx-farm
 
 From inside Dind container, start n number of containers
 
