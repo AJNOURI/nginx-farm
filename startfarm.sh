@@ -27,7 +27,7 @@ if [ "$#" -eq 0 ]; then
   die 1
 fi
 
-ITAG="nginx"
+ITAG="ajnouri/nginx"
 CNAMES="nginx-"
 echo "Number of containers = $2"
 
@@ -40,5 +40,6 @@ for (( i=1; i<=$1; i=i+1 ))
         CID="$(sudo docker ps | grep $CNAMES$i | awk '{ print $1; }')"
 	echo "$CID \n"
 	docker exec $CID service nginx start&
+	docker exec $CID service php5-fpm start&
     done
 
