@@ -3,6 +3,13 @@
 
 Originally forked from [https://github.com/jpetazzo/dind](https://github.com/jpetazzo/dind) 
 
+--------------
+
+Requires **--privileged** option 
+Use with caution!  
+For more inf. look here: https://docs.docker.com/engine/reference/run/#/runtime-privilege-and-linux-capabilities  
+
+--------------
 #### Instructions
 
 Run a Docker in Docker container:  
