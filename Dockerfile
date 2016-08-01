@@ -18,8 +18,9 @@ ADD ./wrapdocker /usr/local/bin/wrapdocker
 ADD ./clean.sh  /clean.sh
 ADD ./iplist.sh /iplist.sh
 ADD ./startfarm.sh /startfarm.sh
-
-
+RUN chmod +x clean.sh
+RUN chmod +x iplist.sh
+RUN chmod +x startfarm.sh
 RUN chmod +x /usr/local/bin/wrapdocker
 
 # Define additional metadata for our image.
